@@ -1,0 +1,14 @@
+﻿name: ci
+on: [push, pull_request]           # run on every push and PR
+jobs:
+  build:
+    runs-on: ubuntu-latest         # a fresh Linux machine
+    steps:
+      - uses: actions/checkout@v4          # get your code
+      - uses: actions/setup-dotnet@v4       # install the .NET SDK...
+        with:
+          global-json-file: global.json     # ...the exact version you pinned
+      - run: dotnet tool restore            # installs Fantomas from the manifest
+      - run: dotnet fantomas --check .      # fail if code isn't formatted
+      - run: dotnet build                   # warnings-as-errors via Directory.Build.props
+      - run: dotnet test                    # run the Expecto tests
