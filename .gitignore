@@ -1,0 +1,54 @@
+## Add this block to the top or bottom of your .NET template
+
+# ==========================================
+# JetBrains Rider & IntelliJ Platform
+# ==========================================
+.idea/
+*.sln.iml
+*.suo
+*.user
+*.userosscache
+*.sln.docattachments
+
+# User-specific or high-churn Rider configurations
+**/.idea/**/workspace.xml
+**/.idea/**/tasks.xml
+**/.idea/**/usage.statistics.xml
+**/.idea/**/dictionaries
+**/.idea/shelf/
+**/.idea/httpRequests/
+**/.idea/dataSources/
+**/.idea/dataSources.local.xml
+
+# Rider-specific RiderLink (if working on mixed/game projects)
+.idea/RiderLink/
+
+# ==========================================
+# .NET / F# Core Exclusions
+# ==========================================
+# Build outputs
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+
+# F# specific and script artifacts
+.fake/
+.fable/
+paket-files/
+.ionide/
+
+# Package management
+node_modules/
+[Pp]ackages/
+*.nuget.props
+*.nuget.targets
+
+# User-specific/Machine-specific configurations
+*.user
+*.suo
+*.userosscache
+*.sln.docattachments
+
+# Publishing outputs
+*.publish.htm
+*.azureauth

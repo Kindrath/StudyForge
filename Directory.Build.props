@@ -1,0 +1,7 @@
+﻿<Project>
+    <PropertyGroup>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <WarnOn>1182</WarnOn>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+</Project>
